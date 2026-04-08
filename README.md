@@ -139,8 +139,6 @@ services:
       - "8080:8080"
     env_file:
       - .env
-    depends_on:
-      - db
     restart: always
 ```
 
