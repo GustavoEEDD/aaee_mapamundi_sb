@@ -46,4 +46,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push image
-        run: docker push  ghcr.io/gustavoeedd/aaee_mapamundi_sb:latest .
+        run: docker push  ghcr.io/gustavoeedd/aaee_mapamundi_sb:latest
