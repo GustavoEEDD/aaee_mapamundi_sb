@@ -35,7 +35,7 @@ jobs:
 
       # 3. Construir la imagen Docker usando el Dockerfile
       - name: Build Docker image
-        run: docker build -t ghcr.io/${{ github.repository }}:latest .
+        run: docker build -t ghcr.io/gustavoeedd/aaee_mapamundi_sb:latest . .
 
       # 4. Push a GHCR (GitHub Container Registry)
       - name: Push Docker image
@@ -46,4 +46,4 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push image
-        run: docker push ghcr.io/${{ github.repository }}:latest
+        run: docker build -t ghcr.io/gustavoeedd/aaee_mapamundi_sb:latest .
